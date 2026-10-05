@@ -1,6 +1,6 @@
 # Sequence — PowerPoint template system
 
-A reusable branded deck template: eleven layouts on slide masters, a single
+A reusable branded 16:9 deck template: ten layouts on slide masters, a single
 theme driving every colour, and named placeholders so new slides inherit
 position, weight and colour automatically.
 
@@ -9,13 +9,14 @@ position, weight and colour automatically.
 | File | What it is |
 |---|---|
 | `Sequence-template.potx` | The template. Open it in PowerPoint to start a new deck. |
-| `Sequence-template.pptx` | Ten example slides showing every layout in use. |
-| `Sequence-template.pdf` | Preview — look at this first. |
+| `Sequence-template.pptx` | Five example slides. |
+| `Sequence-template.pdf` | Checked PDF preview — look at this first. |
+| `USAGE.md` | Brief usage notes. |
 
 ## Layouts
 
-Cover · Section divider · Agenda · Title only · Two column · Stat ·
-Chart + commentary · Workflow · Comparison · Table · Closing
+Cover · Section · Agenda · Content · Content two column · Product
+screenshot · Workflow · Comparison · Data · Closing
 
 ## What stays editable
 

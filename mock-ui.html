@@ -1,0 +1,64 @@
+<!doctype html>
+<meta charset="utf-8">
+<style>
+  :root{--ink:#11161F;--slate:#1E2A38;--paper:#F3F6F8;--teal:#0E7C7B;--amber:#E39B3C;--line:#E2E8EC;--mute:#8FA3B0}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{width:1600px;height:1000px;background:#fff;font:14px/1.45 "Segoe UI",Calibri,Arial,sans-serif;color:var(--ink);display:flex}
+  .rail{width:210px;background:var(--ink);padding:22px 0;color:#fff;flex:none}
+  .brand{font-size:15px;font-weight:700;letter-spacing:.14em;color:var(--teal);padding:0 22px 22px}
+  .nav div{padding:11px 22px;color:#9FB0BC;font-size:14px}
+  .nav div.on{background:var(--slate);color:#fff;font-weight:600}
+  .main{flex:1;display:flex;flex-direction:column;min-width:0}
+  .top{height:62px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 28px;flex:none}
+  .crumb{color:var(--mute);font-size:13px}
+  .crumb b{color:var(--ink);font-weight:600}
+  .btn{background:var(--teal);color:#fff;padding:8px 16px;border-radius:4px;font-size:13px;font-weight:600}
+  .body{padding:24px 28px;overflow:hidden}
+  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:22px}
+  .kpi{background:var(--paper);border-radius:6px;padding:16px 18px}
+  .kpi .lab{font-size:12px;color:var(--mute);text-transform:uppercase;letter-spacing:.07em}
+  .kpi .val{font-size:30px;font-weight:700;margin-top:6px}
+  .kpi .val.t{color:var(--teal)} .kpi .val.a{color:var(--amber)}
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  th{background:var(--ink);color:#fff;text-align:left;padding:11px 14px;font-weight:600;font-size:13px}
+  td{padding:11px 14px;border-bottom:1px solid var(--line)}
+  .pill{display:inline-block;padding:3px 10px;border-radius:11px;font-size:12px;font-weight:600}
+  .ok{background:#E3F1F0;color:#0A5F5E}
+  .rev{background:#FBEFDF;color:#9A6416}
+  .err{background:#F8E6E2;color:#B4472E}
+  .num{text-align:right;font-variant-numeric:tabular-nums}
+</style>
+<div class="rail">
+  <div class="brand">SEQUENCE</div>
+  <div class="nav">
+    <div>Overview</div><div class="on">Schedules</div><div>Contracts</div>
+    <div>Exceptions</div><div>Close</div><div>Reports</div><div>Settings</div>
+  </div>
+</div>
+<div class="main">
+  <div class="top">
+    <div class="crumb">Schedules / <b>October close</b></div>
+    <div class="btn">Prepare close</div>
+  </div>
+  <div class="body">
+    <div class="kpis">
+      <div class="kpi"><div class="lab">Scheduled</div><div class="val">1,284</div></div>
+      <div class="kpi"><div class="lab">Recognised</div><div class="val t">$4.21M</div></div>
+      <div class="kpi"><div class="lab">In review</div><div class="val a">37</div></div>
+      <div class="kpi"><div class="lab">Blocked</div><div class="val">6</div></div>
+    </div>
+    <table>
+      <tr><th>Contract</th><th>Customer</th><th>Period</th><th class="num">Amount</th><th>Status</th></tr>
+      <tr><td>C-10428</td><td>Brightline Logistics</td><td>Oct 2026</td><td class="num">$184,200</td><td><span class="pill ok">Recognised</span></td></tr>
+      <tr><td>C-10431</td><td>Perrin &amp; Vale</td><td>Oct 2026</td><td class="num">$96,750</td><td><span class="pill rev">In review</span></td></tr>
+      <tr><td>C-10444</td><td>Nordvik Industrial</td><td>Oct 2026</td><td class="num">$412,000</td><td><span class="pill ok">Recognised</span></td></tr>
+      <tr><td>C-10451</td><td>Hallet Group</td><td>Oct 2026</td><td class="num">$58,400</td><td><span class="pill err">Blocked</span></td></tr>
+      <tr><td>C-10460</td><td>Castellane SA</td><td>Oct 2026</td><td class="num">$233,900</td><td><span class="pill rev">In review</span></td></tr>
+      <tr><td>C-10472</td><td>Orrin Fabrication</td><td>Oct 2026</td><td class="num">$127,300</td><td><span class="pill ok">Recognised</span></td></tr>
+      <tr><td>C-10488</td><td>Lindqvist Marine</td><td>Oct 2026</td><td class="num">$305,100</td><td><span class="pill ok">Recognised</span></td></tr>
+      <tr><td>C-10495</td><td>Fenwick Partners</td><td>Oct 2026</td><td class="num">$74,650</td><td><span class="pill rev">In review</span></td></tr>
+      <tr><td>C-10502</td><td>Aubert Technique</td><td>Oct 2026</td><td class="num">$198,400</td><td><span class="pill ok">Recognised</span></td></tr>
+      <tr><td>C-10517</td><td>Marchetti Srl</td><td>Oct 2026</td><td class="num">$142,750</td><td><span class="pill ok">Recognised</span></td></tr>
+    </table>
+  </div>
+</div>
